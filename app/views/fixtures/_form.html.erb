@@ -1,0 +1,34 @@
+
+<%= form_for(@fixture) do |f| %>
+  <% if @fixture.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fixture.errors.count, "error") %> prohibited this fixture from being saved:</h2>
+
+      <ul>
+      <% @fixture.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :home_id %><br>
+    <%= f.select :home_id, options_for_select(Team.all.map{|t|[t.name, t.id]}, @fixture.home_id) %>
+  </div>
+  <div class="field">
+    <%= f.label :homepoints %><br>
+    <%= f.number_field :homepoints %>
+  </div>
+  <div class="field">
+    <%= f.label :away_id %><br>
+    <%= f.select :away_id, options_for_select(Team.all.map{|t|[t.name, t.id]}, @fixture.away_id) %>
+  </div>
+  <div class="field">
+    <%= f.label :awaypoints %><br>
+    <%= f.number_field :awaypoints %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

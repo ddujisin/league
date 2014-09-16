@@ -1,0 +1,19 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: league
+  password: league
+  socket: /tmp/mysql.sock
+
+development:
+ <<: *default
+ database: league_development
+
+test:
+ <<: *default
+ database: league_test
+
+production:
+ <<: *default
+ database: league_production 

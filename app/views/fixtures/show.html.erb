@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Home:</strong>
+  <%= @fixture.home %>
+</p>
+
+<p>
+  <strong>Homepoints:</strong>
+  <%= @fixture.homepoints %>
+</p>
+
+<p>
+  <strong>Away:</strong>
+  <%= @fixture.away %>
+</p>
+
+<p>
+  <strong>Awaypoints:</strong>
+  <%= @fixture.awaypoints %>
+</p>
+
+<%= link_to 'Edit', edit_fixture_path(@fixture) %> |
+<%= link_to 'Back', fixtures_path %>

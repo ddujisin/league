@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  home_id: 
+  homepoints: 1
+  away_id: 
+  awaypoints: 1
+
+two:
+  home_id: 
+  homepoints: 1
+  away_id: 
+  awaypoints: 1
