@@ -9,16 +9,16 @@
 #Teams
 Team.delete_all
 
-@team1 = Team.create!(name: 'Team1', points: 0, wins: 0, draws:0, losses:0)
-@team2 = Team.create!(name: 'Team2', points: 0, wins: 0, draws:0, losses:0)
-@team3 = Team.create!(name: 'Team3', points: 0, wins: 0, draws:0, losses:0)
-@team4 = Team.create!(name: 'Team4', points: 0, wins: 0, draws:0, losses:0)
-@team5 = Team.create!(name: 'Team5', points: 0, wins: 0, draws:0, losses:0)
-@team6 = Team.create!(name: 'Team6', points: 0, wins: 0, draws:0, losses:0)
-@team7 = Team.create!(name: 'Team7', points: 0, wins: 0, draws:0, losses:0)
-@team8 = Team.create!(name: 'Team8', points: 0, wins: 0, draws:0, losses:0)
-@team9 = Team.create!(name: 'Team9', points: 0, wins: 0, draws:0, losses:0)
-@team10 = Team.create!(name: 'Team10', points: 0, wins: 0, draws:0, losses:0)
+@team1 = Team.create!(name: 'Team1', wins: 0, draws:0, losses:0)
+@team2 = Team.create!(name: 'Team2', wins: 0, draws:0, losses:0)
+@team3 = Team.create!(name: 'Team3', wins: 0, draws:0, losses:0)
+@team4 = Team.create!(name: 'Team4', wins: 0, draws:0, losses:0)
+@team5 = Team.create!(name: 'Team5', wins: 0, draws:0, losses:0)
+@team6 = Team.create!(name: 'Team6', wins: 0, draws:0, losses:0)
+@team7 = Team.create!(name: 'Team7', wins: 0, draws:0, losses:0)
+@team8 = Team.create!(name: 'Team8', wins: 0, draws:0, losses:0)
+@team9 = Team.create!(name: 'Team9', wins: 0, draws:0, losses:0)
+@team10 = Team.create!(name: 'Team10', wins: 0, draws:0, losses:0)
 
 #Fixtures
 Fixture.delete_all

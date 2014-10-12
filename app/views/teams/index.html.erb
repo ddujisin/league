@@ -13,7 +13,7 @@
   </thead>
 
   <tbody>
-    <% @teams.each do |team| %>
+    <% @teams.sorted_by_points.each do |team| %>
       <tr>
         <td><%= team.name %></td>
         <td><%= team.points %></td>
